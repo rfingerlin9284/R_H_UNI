@@ -1,0 +1,8 @@
+{
+  "id": "test-decision-001",
+  "symbol": "BTC_USD",
+  "side": "buy",
+  "confidence": 0.75,
+  "contributors": {"valuation": 0.6, "macro": 0.4},
+  "expires_at": 9999999999
+}

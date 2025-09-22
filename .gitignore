@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+# virtualenvs and local envs
+env/
+venv/
+.venv/
+.test-venv/
+.venv_gs/
+
+# backups and repair files
+*~
+*.bak*
+*.pre-repair*
+
+# local state
+.state/
+
+# IDE
+.vscode/
+
