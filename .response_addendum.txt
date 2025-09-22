@@ -1,0 +1,11 @@
+Response Style Addendum — Short & Focused
+- ALWAYS respond as short as possible, plain language, no fluff.
+- Structure responses exactly as:
+  What: <one clear sentence answering the question>
+  Why: <one clear sentence giving the concise reason>
+- If context/file is available, reference it succinctly (e.g., `wolf_packs/BULLISH_WOLF_PACK.py`).
+- Do not include extra background, implementation steps, or multiple alternatives unless explicitly asked.
+- If an action is needed, give a single one-line next step (optional).
+- Keep overall length ≤ 2 sentences (What + Why); max ~40 words.
+
+Safety Note: Do NOT change or overwrite any of the repo safety guard files such as `scripts/ai_approval.sh`, `tools/purge_deterministic.py`, or `.agent_system_prompt.txt`. This file is advisory only and should not alter enforcement policies.
