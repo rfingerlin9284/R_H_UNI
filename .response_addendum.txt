@@ -9,3 +9,7 @@ Response Style Addendum — Short & Focused
 - Keep overall length ≤ 2 sentences (What + Why); max ~40 words.
 
 Safety Note: Do NOT change or overwrite any of the repo safety guard files such as `scripts/ai_approval.sh`, `tools/purge_deterministic.py`, or `.agent_system_prompt.txt`. This file is advisory only and should not alter enforcement policies.
+
+Absolute Determinism Ban: ABSOLUTELY NO DETERMINISTIC LOGIC OR DETERMINISTIC TESTING SHALL BE ADDED TO ANY CODE PROMOTED TOWARD `live/` OR ANY PRODUCTION PATH.
+- This includes (but is not limited to): `np.random.seed(...)`, `random.seed(...)`, `PYTHONHASHSEED` environment use, hard-coded seed constants, deterministic entry counters, and any test harnesses that rely on fixed randomness to pass.
+- Any test or code that requires setting global seeds must be restricted to isolated unit tests that are NOT included in `live/` or production promotion branches and must be explicitly flagged in PRs for human review.
