@@ -1,0 +1,24 @@
+{
+  "tools/purge_deterministic.py": [
+    {
+      "line_no": 5,
+      "line": "deterministic patterns (np.random.seed, random.seed, PYTHONHASHSEED, hardcoded",
+      "pattern": "PYTHONHASHSEED"
+    },
+    {
+      "line_no": 6,
+      "line": "seed values, and obvious counter-based deterministic logic like 'entry_counter').",
+      "pattern": "entry_counter\\b"
+    },
+    {
+      "line_no": 26,
+      "line": "    r\"PYTHONHASHSEED\",",
+      "pattern": "PYTHONHASHSEED"
+    },
+    {
+      "line_no": 28,
+      "line": "    r\"entry_counter\\b\",",
+      "pattern": "entry_counter\\b"
+    }
+  ]
+}
