@@ -26,6 +26,16 @@ jobs:
         run: |
           python tools/purge_deterministic.py --root . --out .state/deterministic_findings.json
           cat .state/deterministic_findings.json
+          python - <<'PY'
+import json
+f = '.state/deterministic_findings.json'
+data = json.load(open(f))
+if len(data) > 0:
+    print('Deterministic patterns found; failing CI to prevent merge')
+    print(json.dumps(data, indent=2))
+    raise SystemExit(2)
+print('No deterministic patterns found')
+PY
 
       - name: Run tests
         run: |
