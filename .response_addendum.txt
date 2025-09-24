@@ -1,0 +1,5 @@
+Simple addendum (paths and brevity)
+
+- Stay in the current project folder only: /home/ing/RICK/R_H_UNI
+- Ignore any old root paths mentioned earlier; they no longer exist.
+- Keep answers short and simple; the user only copy/pastes.
