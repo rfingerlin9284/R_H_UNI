@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.2, pluggy-1.6.0
+rootdir: /home/ing/RICK/R_H_UNI
+collected 2 items
+
+tests/wolf_packs/test_imports.py .                                       [ 50%]
+tests/wolf_packs/test_orchestrator_smoke.py .                            [100%]
+
+- generated xml file: /home/ing/RICK/R_H_UNI/artifacts/20250926_041644/reports/gs_junit.xml -
+============================== 2 passed in 0.01s ===============================

@@ -1,0 +1,4 @@
+{"ts":1758813891.7691183,"level":"INFO","run_id":"3c3a8448ea2f6368","module":"demo_dry_run","msg":"starting dry-run demo","ctx":{"run_id":"3c3a8448ea2f6368"}}
+{"ts":1758813891.7718263,"level":"DEBUG","run_id":"3c3a8448ea2f6368","module":"wolf_packs.extracted_oanda","msg":"calculated side","ctx":{"side":null}}
+{"ts":1758813891.771939,"level":"INFO","run_id":"3c3a8448ea2f6368","module":"demo_dry_run","msg":"demo signals","ctx":{"signals":[]}}
+{"ts":1758813891.7719858,"level":"INFO","run_id":"3c3a8448ea2f6368","module":"demo_dry_run","msg":"demo finished","ctx":{"run_id":"3c3a8448ea2f6368"}}
