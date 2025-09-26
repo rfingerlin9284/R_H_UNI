@@ -1,0 +1,7 @@
+{
+  "python_version": "Python 3.12.3",
+  "pip_version": "pip 24.0 from /usr/lib/python3/dist-packages/pip (python 3.12)",
+  "module_status": {
+    "numpy: MISSING": "pandas: MISSING"
+  }
+}
