@@ -1,0 +1,3 @@
+{"ts":1758813700.1027265,"level":"INFO","run_id":"0b5118ec9b938817","module":"demo_dry_run","msg":"starting dry-run demo","ctx":{"run_id":"0b5118ec9b938817"}}
+{"ts":1758813700.1099005,"level":"INFO","run_id":"0b5118ec9b938817","module":"demo_dry_run","msg":"demo signals","ctx":{"signals":[{"symbol":"EUR_USD","action":"sell","size":0.01}]}}
+{"ts":1758813700.1100013,"level":"INFO","run_id":"0b5118ec9b938817","module":"demo_dry_run","msg":"demo finished","ctx":{"run_id":"0b5118ec9b938817"}}

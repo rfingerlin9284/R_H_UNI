@@ -1,0 +1,61 @@
+# Run GS harness on pull requests and upload artifacts
+name: GS Check
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  gs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Run GS battery
+        run: |
+          set -eux
+          # ensure scripts are executable
+          chmod +x scripts/run_gs_battery.sh || true
+          ./scripts/run_gs_battery.sh
+
+      - name: Collect UNIBOT_reports
+        if: always()
+        run: |
+          # the GS battery writes to $HOME/UNIBOT_reports by default; copy into workspace for upload
+          if [ -d "$HOME/UNIBOT_reports" ]; then
+            cp -r "$HOME/UNIBOT_reports" "$GITHUB_WORKSPACE/_UNIBOT_reports" || true
+          fi
+
+      - name: Upload UNIBOT_reports artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unibot-reports
+          path: |
+            _UNIBOT_reports/**
+
+      - name: Upload repo artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-artifacts
+          path: |
+            artifacts/**

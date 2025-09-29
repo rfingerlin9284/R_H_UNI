@@ -1,0 +1,5 @@
+{"ts":1758813755.2367935,"level":"INFO","run_id":"58ce9a3340a11cc5","module":"demo_dry_run","msg":"starting dry-run demo","ctx":{"run_id":"58ce9a3340a11cc5"}}
+{"ts":1758813755.2389271,"level":"DEBUG","run_id":"58ce9a3340a11cc5","module":"wolf_packs.extracted_oanda","msg":"calculated side","ctx":{"side":"buy"}}
+{"ts":1758813755.23899,"level":"INFO","run_id":"58ce9a3340a11cc5","module":"wolf_packs.extracted_oanda","msg":"signal generated","ctx":{"signals":[{"symbol":"EUR_USD","action":"buy","size":0.01}]}}
+{"ts":1758813755.2390175,"level":"INFO","run_id":"58ce9a3340a11cc5","module":"demo_dry_run","msg":"demo signals","ctx":{"signals":[{"symbol":"EUR_USD","action":"buy","size":0.01}]}}
+{"ts":1758813755.2390335,"level":"INFO","run_id":"58ce9a3340a11cc5","module":"demo_dry_run","msg":"demo finished","ctx":{"run_id":"58ce9a3340a11cc5"}}
